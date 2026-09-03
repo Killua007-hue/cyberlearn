@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CyberLearn - Apprendre la cybersécurité</title>
+
+  <meta
+    name="description"
+    content="CyberLearn : site éducatif pour apprendre les bases de la cybersécurité."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       EN-TÊTE
+  ========================== -->
+  <header class="header">
+
+    <div class="logo">
+      🛡️ CyberLearn
+    </div>
+
+    <button
+      id="menu-btn"
+      class="menu-btn"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="nav" class="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#cours">Cours</a>
+      <a href="#outils">Outils</a>
+      <a href="#conseils">Conseils</a>
+      <a href="#apropos">À propos</a>
+    </nav>
+
+  </header>
+
+
+  <!-- =========================
+       CONTENU PRINCIPAL
+  ========================== -->
+  <main>
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="hero">
+
+      <div class="hero-content">
+
+        <p class="badge">🔐 CYBERSÉCURITÉ</p>
+
+        <h1>
+          Apprends la cybersécurité
+          <span>simplement</span>
+        </h1>
+
+        <p>
+          Découvre les bases de la sécurité informatique,
+          protège tes comptes et comprends les principales
+          menaces du monde numérique.
+        </p>
+
+        <a href="#cours" class="btn">
+          Commencer à apprendre →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- COURS -->
+    <section id="cours" class="section">
+
+      <div class="section-title">
+        <p class="badge">📚 APPRENTISSAGE</p>
+        <h2>Les bases de la cybersécurité</h2>
+        <p>
+          Commence par ces notions essentielles.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">🔑</div>
+          <h3>Mots de passe</h3>
+          <p>
+            Apprends à créer et gérer des mots de passe
+            solides et à utiliser l'authentification
+            à deux facteurs.
+          </p>
+          <button
+            class="learn-btn"
+            data-message="Un bon mot de passe doit être long, unique et difficile à deviner. Utilise aussi l'authentification à deux facteurs lorsque c'est possible."
+          >
+            En savoir plus
+          </button>
+        </article>
+
+
+        <article class="card">
+          <div class="card-icon">🎣</div>
+          <h3>Phishing</h3>
+          <p>
+            Apprends à reconnaître les messages et sites
+            frauduleux qui cherchent à voler des informations.
+          </p>
+          <button
+            class="learn-btn"
+            data-message="Méfie-toi des messages urgents, des liens suspects et des demandes inhabituelles de mot de passe ou d'informations personnelles."
+          >
+            En savoir plus
+          </button>
+        </article>
+
+
+        <article class="card">
+          <div class="card-icon">🦠</div>
+          <h3>Logiciels malveillants</h3>
+          <p>
+            Découvre ce que sont les logiciels malveillants
+            et comment réduire les risques.
+          </p>
+          <button
+            class="learn-btn"
+            data-message="Garde tes appareils et applications à jour, évite les fichiers provenant de sources inconnues et utilise les protections de sécurité disponibles."
+          >
+            En savoir plus
+          </button>
+        </article>
+
+
+        <article class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Sécurité Internet</h3>
+          <p>
+            Découvre les bonnes pratiques pour naviguer
+            plus sûrement sur Internet.
+          </p>
+          <button
+            class="learn-btn"
+            data-message="Vérifie l'adresse des sites, utilise des connexions fiables et évite de partager inutilement tes informations personnelles."
+          >
+            En savoir plus
+          </button>
+        </article>
+
+
+        <article class="card">
+          <div class="card-icon">📱</div>
+          <h3>Sécurité mobile</h3>
+          <p>
+            Apprends à mieux protéger ton téléphone
+            et tes applications.
+          </p>
+          <button
+            class="learn-btn"
+            data-message="Utilise un verrouillage d'écran, installe les mises à jour et télécharge les applications depuis des sources officielles."
+          >
+            En savoir plus
+          </button>
+        </article>
+
+
+        <article class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Vie privée</h3>
+          <p>
+            Comprends comment protéger tes informations
+            personnelles en ligne.
+          </p>
+          <button
+            class="learn-btn"
+            data-message="Réfléchis avant de publier des informations personnelles et vérifie régulièrement les permissions accordées à tes applications."
+          >
+            En savoir plus
+          </button>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- OUTILS -->
+    <section id="outils" class="section tools-section">
+
+      <div class="section-title">
+        <p class="badge">🧰 OUTILS</p>
+        <h2>Outils d'apprentissage</h2>
+        <p>
+          Des exercices simples pour progresser.
+        </p>
+      </div>
+
+      <div class="tool-box">
+
+        <h3>🔍 Vérificateur de mot de passe</h3>
+
+        <p>
+          Teste uniquement la qualité générale d'un mot de passe
+          fictif. Ne mets jamais ton vrai mot de passe.
+        </p>
+
+        <input
+          type="password"
+          id="password-test"
+          placeholder="Entre un mot de passe fictif"
+          autocomplete="off"
+        >
+
+        <button id="check-password" class="btn">
+          Vérifier
+        </button>
+
+        <p id="password-result"></p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONSEILS -->
+    <section id="conseils" class="section">
+
+      <div class="section-title">
+        <p class="badge">💡 CONSEILS</p>
+        <h2>5 règles importantes</h2>
+      </div>
+
+      <div class="tips">
+
+        <div class="tip">
+          <strong>01</strong>
+          <p>Utilise un mot de passe différent pour chaque compte important.</p>
+        </div>
+
+        <div class="tip">
+          <strong>02</strong>
+          <p>Active l'authentification à deux facteurs quand elle est disponible.</p>
+        </div>
+
+        <div class="tip">
+          <strong>03</strong>
+          <p>Ne clique pas rapidement sur les liens reçus dans des messages suspects.</p>
+        </div>
+
+        <div class="tip">
+          <strong>04</strong>
+          <p>Maintiens ton téléphone, ton ordinateur et tes applications à jour.</p>
+        </div>
+
+        <div class="tip">
+          <strong>05</strong>
+          <p>Ne partage jamais tes mots de passe ou codes de connexion.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section about">
+
+      <div class="section-title">
+        <p class="badge">ℹ️ À PROPOS</p>
+        <h2>Bienvenue sur CyberLearn</h2>
+
+        <p>
+          CyberLearn est un petit site éducatif destiné à
+          apprendre progressivement les bases de la
+          cybersécurité.
+        </p>
+
+        <p>
+          Le but est de développer de bonnes habitudes
+          numériques et de comprendre comment mieux se
+          protéger en ligne.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       PIED DE PAGE
+  ========================== -->
+  <footer class="footer">
+
+    <h3>🛡️ CyberLearn</h3>
+
+    <p>
+      Apprendre • Comprendre • Se protéger
+    </p>
+
+    <p>
+      © <span class="annee"></span> CyberLearn
+    </p>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
